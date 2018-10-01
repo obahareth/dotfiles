@@ -1,0 +1,12 @@
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+    ~/.zpreztorc: zpreztorc
+    ~/.gitignore_global: gitignore_global
+    ~/.hyper.js: hyper.js
+
+
