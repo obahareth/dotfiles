@@ -33,3 +33,6 @@ alias lc='colorls -lA --sd'
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/obahareth/.asdf/installs/nodejs/9.4.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/obahareth/.asdf/installs/nodejs/9.4.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+alias kraken="open -a 'GitKraken' --args -p $(pwd)"
+
