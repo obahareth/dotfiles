@@ -14,5 +14,7 @@ alias lc='colorls -lA --sd'
 # Environment variables
 source ~/.env_vars
 
+$GOPATH/bin/figurine -f "larry3d.flf" tam
+
 # asdf
 source ~/.asdf/asdf.fish
