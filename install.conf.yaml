@@ -1,3 +1,7 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ['~']
 
 - link:
@@ -8,5 +12,8 @@
     ~/.zpreztorc: zpreztorc
     ~/.gitignore_global: gitignore_global
     ~/.hyper.js: hyper.js
+    ~/.config/fish: config/fish
+    ~/.config/fisher: config/fisher
 
-
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
