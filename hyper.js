@@ -111,6 +111,7 @@ module.exports = {
     'hyper-pane',
     'hyperlinks',
     'hyperterm-tabs',
+    'hyper-search',
     'hyper-tab-icons'
   ],
   modifierKeys: {
