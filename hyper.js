@@ -10,6 +10,8 @@ module.exports = {
     // default font size in pixels for all tabs
     fontSize: fontSize,
 
+    scrollback: 100000,
+
     // font family with optional fallbacks
     fontFamily: fontFamily,
 
