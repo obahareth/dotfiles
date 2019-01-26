@@ -42,9 +42,6 @@ zstyle ':prezto:load' pmodule \
   'dnf' \
   'fasd' \
   'homebrew' \
-  'ruby' \
-  'rails' \
-  'docker' \
   'completion' \
   'prompt'
 
@@ -61,8 +58,8 @@ zstyle ':prezto:module:autosuggestions' color 'yes'
 #
 
 # Set the entries to ignore in static */etc/hosts* for host completion.
-zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
-  '0.0.0.0' '127.0.0.1'
+#zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
+#  '0.0.0.0' '127.0.0.1'
 
 #
 # Editor
