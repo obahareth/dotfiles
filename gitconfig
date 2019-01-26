@@ -1,7 +1,7 @@
 [user]
 	name = Omar Bahareth
 	email = omar@omar.engineer
-	signingkey = BFFD1B8F549CC61D
+	signingkey = CAB8595254448B43F4F20615BFFD1B8F549CC61D
 [core]
 	excludesfile = /Users/obahareth/.gitignore_global
 	quotepath = false
