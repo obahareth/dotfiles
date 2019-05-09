@@ -16,3 +16,6 @@ source ~/.env_vars
 
 # asdf
 source ~/.asdf/asdf.fish
+
+alias dc="docker-compose"
+alias dce="docker-compose exec"
