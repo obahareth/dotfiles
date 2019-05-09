@@ -19,3 +19,5 @@ source ~/.asdf/asdf.fish
 
 alias dc="docker-compose"
 alias dce="docker-compose exec"
+
+set -x GPG_TTY (tty)
