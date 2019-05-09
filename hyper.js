@@ -3,7 +3,7 @@
 // See https://hyper.is#cfg for all currently supported options.
 
 var fontSize = 16;
-var fontFamily = '"FuraCode Nerd Font", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace';
+var fontFamily = '"PragmataPro Mono Liga", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace';
 
 module.exports = {
   config: {
