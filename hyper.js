@@ -2,7 +2,7 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-var fontSize = 16;
+var fontSize = 14;
 var fontFamily = '"PragmataPro Mono Liga", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace';
 
 module.exports = {
@@ -46,7 +46,7 @@ module.exports = {
     // set to `false` if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
     // default: `true` on windows and Linux (ignored on macOS)
-    showWindowControls: 'false',
+    showWindowControls: 'left',
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -62,7 +62,7 @@ module.exports = {
     // make sure to use a full path if the binary name doesn't work
     // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
     // if you're using powershell, make sure to remove the `--login` below
-    shell: '/usr/local/bin/fish',
+    shell: '/usr/bin/fish',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
