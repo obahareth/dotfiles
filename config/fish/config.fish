@@ -6,7 +6,7 @@ if not functions -q fisher
 end
 
 # Autojump
-[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
+[ -f /home/linuxbrew/.linuxbrew/share/autojump/autojump.fish ]; and source /home/linuxbrew/.linuxbrew/share/autojump/autojump.fish
 
 # Colorls
 alias lc='colorls -lA --sd'
@@ -20,4 +20,3 @@ source ~/.asdf/asdf.fish
 alias dc="docker-compose"
 alias dce="docker-compose exec"
 
-set -x GPG_TTY (tty)
