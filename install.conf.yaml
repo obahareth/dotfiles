@@ -14,6 +14,7 @@
     ~/.hyper.js: hyper.js
     ~/.config/fish: config/fish
     ~/.config/fisher: config/fisher
+    ~/.config/fusuma/config.yml: config.yml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
