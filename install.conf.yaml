@@ -14,7 +14,7 @@
     ~/.hyper.js: hyper.js
     ~/.config/fish: config/fish
     ~/.config/fisher: config/fisher
-    ~/.config/fusuma/config.yml: config.yml
+    ~/.config/fusuma/config.yml: config/fusuma/config.yml
     /etc/X11/xorg.conf.d/30-touchpad.conf: 30-touchpad.conf
 
 - shell:
