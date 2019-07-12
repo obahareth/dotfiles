@@ -5,6 +5,9 @@
 .vcscode/
 .vscode
 
+# vscode code runner extension files
+tempCodeRunnerFile.*
+
 # Intellij
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
