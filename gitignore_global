@@ -1,3 +1,6 @@
+# .env files which usually might have secrets
+.env
+
 # vscode
 .vcscode/
 .vscode
