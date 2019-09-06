@@ -21,3 +21,12 @@ alias dc="docker-compose"
 alias dce="docker-compose exec"
 
 set -x GPG_TTY (tty)
+
+
+# Gcloud
+
+# The next line updates PATH for the Google Cloud SDK.
+bass source '/Users/obahareth/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+bass source '/Users/obahareth/google-cloud-sdk/completion.bash.inc'
