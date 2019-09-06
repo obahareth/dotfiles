@@ -9,6 +9,7 @@
     ~/.vimrc: vimrc
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
+    ~/.bash_profile: bash_profile
     ~/.zpreztorc: zpreztorc
     ~/.gitignore_global: gitignore_global
     ~/.hyper.js: hyper.js
