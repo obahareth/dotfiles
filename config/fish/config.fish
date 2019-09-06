@@ -8,6 +8,9 @@ end
 # Autojump
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
+# Starship prompt
+eval (starship init fish)
+
 # Colorls
 alias lc='colorls -lA --sd'
 
