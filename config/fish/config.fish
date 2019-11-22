@@ -11,9 +11,6 @@ end
 # Starship prompt
 starship init fish | source
 
-# Colorls
-alias lc='colorls -lA --sd'
-
 # Environment variables
 source ~/.env_vars
 
