@@ -9,7 +9,7 @@ end
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
 # Starship prompt
-eval (starship init fish)
+starship init fish | source
 
 # Colorls
 alias lc='colorls -lA --sd'
