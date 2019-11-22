@@ -20,6 +20,7 @@ source ~/.env_vars
 # asdf
 source ~/.asdf/asdf.fish
 
+alias ls='lsd'
 alias dc="docker-compose"
 alias dce="docker-compose exec"
 
