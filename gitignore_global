@@ -69,3 +69,6 @@ Temporary Items
 
 # Local scripts
 local_obahareth_scripts
+
+# Elixir vscode language server files
+.elixir_ls

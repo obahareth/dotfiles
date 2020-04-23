@@ -17,7 +17,7 @@ source ~/.env_vars
 # asdf
 source ~/.asdf/asdf.fish
 
-alias ls='lsd'
+alias ls="exa --icons"
 alias dc="docker-compose"
 alias dce="docker-compose exec"
 
@@ -31,3 +31,7 @@ bass source '/Users/obahareth/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 bass source '/Users/obahareth/google-cloud-sdk/completion.bash.inc'
+
+
+# Navi
+source (navi widget fish)

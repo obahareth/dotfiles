@@ -40,3 +40,5 @@
 	required = true
 [gpg]
 	program = /usr/local/bin/gpg
+[tag]
+	forceSignAnnotated = true

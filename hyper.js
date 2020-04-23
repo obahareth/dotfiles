@@ -2,13 +2,19 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-var fontSize = 16;
-var fontFamily = '"PragmataPro Mono Liga", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace';
+var fontSize = 14;
+var fontFamily = '"FuraCode Nerd Font Mono", "PragmataPro Mono Liga", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace';
 
 module.exports = {
   config: {
     // default font size in pixels for all tabs
     fontSize: fontSize,
+
+    // choose either `'stable'` for receiving highly polished,
+    // or `'canary'` for less polished but more frequent updates
+    updateChannel: 'stable',
+
+    disableLigatures: false,
 
     scrollback: 100000,
 
@@ -94,8 +100,11 @@ module.exports = {
     'hyperlinks',
     'hyperterm-tabs',
     'hyper-search',
-    'hyper-tab-icons'
+    'hyper-tab-icons',
+    'hyper-dark-scrollbar',
+    'hyper-font-ligatures',
   ],
+
   modifierKeys: {
     altIsMeta: true
   },

@@ -8,3 +8,6 @@ if [ -f '/Users/obahareth/google-cloud-sdk/path.bash.inc' ]; then . '/Users/obah
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/obahareth/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/obahareth/google-cloud-sdk/completion.bash.inc'; fi
+
+
+source $HOME/.bash_env_vars

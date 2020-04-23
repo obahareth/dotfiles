@@ -36,3 +36,5 @@ alias lc='colorls -lA --sd'
 
 alias kraken="open -a 'GitKraken' --args -p $(pwd)"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
