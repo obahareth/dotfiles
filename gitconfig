@@ -6,6 +6,7 @@
 	excludesfile = /Users/obahareth/.gitignore_global
 	quotepath = false
 	editor = vim
+	pager = delta --dark --plus-color="#012800" --minus-color="#340001" --theme="base16"
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -42,3 +43,5 @@
 	program = /usr/local/bin/gpg
 [tag]
 	forceSignAnnotated = true
+[interactive]
+	diffFilter = delta --color-only
