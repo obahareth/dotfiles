@@ -19,9 +19,31 @@ import traceback
 
 BASH = 'bash'
 
+FISH_READONLY = [
+    'PWD', 'SHLVL', 'history', 'pipestatus', 'status', 'version',
+    'FISH_VERSION', 'fish_pid', 'hostname', '_', 'fish_private_mode'
+]
+
+IGNORED = [
+ 'PS1', 'XPC_SERVICE_NAME'
+]
+
+def ignored(name):
+    if name == 'PWD':  # this is read only, but has special handling
+        return False
+    # ignore other read only variables
+    if name in FISH_READONLY:
+        return True
+    if name in IGNORED or name.startswith("BASH_FUNC"):
+        return True
+    return False
+
 def escape(string):
     # use json.dumps to reliably escape quotes and backslashes
     return json.dumps(string).replace(r'$', r'\$')
+
+def escape_identifier(word):
+    return escape(word.replace('?', '\\?'))
 
 def comment(string):
     return '\n'.join(['# ' + line for line in string.split('\n')])
@@ -29,7 +51,7 @@ def comment(string):
 def gen_script():
     # Use the following instead of /usr/bin/env to read environment so we can
     # deal with multi-line environment variables (and other odd cases).
-    env_reader = "python -c 'import os,json; print(json.dumps({k:v for k,v in os.environ.items()}))'"
+    env_reader = "%s -c 'import os,json; print(json.dumps({k:v for k,v in os.environ.items()}))'" % (sys.executable)
     args = [BASH, '-c', env_reader]
     output = subprocess.check_output(args, universal_newlines=True)
     old_env = output.strip()
@@ -42,11 +64,17 @@ def gen_script():
         pipe_w
     )
     args = [BASH, '-c', command, 'bass', ' '.join(sys.argv[1:])]
-    subprocess.check_call(args, universal_newlines=True, close_fds=False)
+    p = subprocess.Popen(args, universal_newlines=True, close_fds=False)
     os.close(pipe_w)
     with os.fdopen(pipe_r) as f:
         new_env = f.readline()
-        alias = f.read()
+        alias_str = f.read()
+    if p.wait() != 0:
+        raise subprocess.CalledProcessError(
+            returncode=p.returncode,
+            cmd=' '.join(sys.argv[1:]),
+            output=new_env + alias_str
+        )
     new_env = new_env.strip()
 
     old_env = json.loads(old_env)
@@ -55,7 +83,7 @@ def gen_script():
     script_lines = []
 
     for k, v in new_env.items():
-        if k in ['PS1', 'SHLVL', 'XPC_SERVICE_NAME'] or k.startswith("BASH_FUNC"):
+        if ignored(k):
             continue
         v1 = old_env.get(k)
         if not v1:
@@ -80,6 +108,13 @@ def gen_script():
         script_lines.append('set -e %s' % var)
 
     script = '\n'.join(script_lines)
+
+    alias_lines = []
+    for line in alias_str.splitlines():
+        _, rest = line.split(None, 1)
+        k, v = rest.split("=", 1)
+        alias_lines.append("alias " + escape_identifier(k) + "=" + v)
+    alias = '\n'.join(alias_lines)
 
     return script + '\n' + alias
 

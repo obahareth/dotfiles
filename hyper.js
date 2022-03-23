@@ -2,8 +2,8 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-var fontSize = 14;
-var fontFamily = '"FuraCode Nerd Font Mono", "PragmataPro Mono Liga", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace';
+var fontSize = 18;
+var fontFamily = '"JetBrainsMono NF", "PragmataPro Mono Liga", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace';
 
 module.exports = {
   config: {
@@ -16,7 +16,7 @@ module.exports = {
 
     disableLigatures: false,
 
-    scrollback: 100000,
+    scrollback: 10000000,
 
     // font family with optional fallbacks
     fontFamily: fontFamily,
@@ -68,7 +68,7 @@ module.exports = {
     // make sure to use a full path if the binary name doesn't work
     // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
     // if you're using powershell, make sure to remove the `--login` below
-    shell: '/usr/local/bin/fish',
+    shell: '/opt/homebrew/bin/fish',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used

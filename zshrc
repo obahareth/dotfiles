@@ -1,3 +1,7 @@
+# Fig pre block. Keep at the top of this file.
+export PATH="${PATH}:${HOME}/.local/bin"
+eval "$(fig init zsh pre)"
+
 # Load Prezto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
@@ -38,3 +42,7 @@ alias kraken="open -a 'GitKraken' --args -p $(pwd)"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Fig post block. Keep at the bottom of this file.
+eval "$(fig init zsh post)"
+

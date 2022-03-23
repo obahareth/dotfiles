@@ -6,20 +6,23 @@ if not functions -q fisher
 end
 
 # Autojump
-[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
-
-# Starship prompt
-starship init fish | source
+[ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
 
 # Environment variables
 source ~/.env_vars
 
-# asdf
-source ~/.asdf/asdf.fish
+# Starship prompt
+starship init fish | source
 
+# asdf
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+# aliases
 alias ls="exa --icons"
 alias dc="docker-compose"
 alias dce="docker-compose exec"
+alias flushdns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
+alias gpg_test="echo \"test\" | gpg --clearsign"
 
 set -x GPG_TTY (tty)
 
@@ -27,11 +30,13 @@ set -x GPG_TTY (tty)
 # Gcloud
 
 # The next line updates PATH for the Google Cloud SDK.
-bass source '/Users/obahareth/google-cloud-sdk/path.bash.inc'
+# bass source '/Users/obahareth/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
-bass source '/Users/obahareth/google-cloud-sdk/completion.bash.inc'
+# bass source '/Users/obahareth/google-cloud-sdk/completion.bash.inc'
 
 
 # Navi
-source (navi widget fish)
+navi widget fish | source
+set -g fish_user_paths "/usr/local/opt/openssl@1.1/bin" $fish_user_paths
+
