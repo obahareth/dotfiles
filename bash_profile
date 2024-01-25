@@ -16,5 +16,5 @@ if [ -f '/Users/obahareth/google-cloud-sdk/completion.bash.inc' ]; then . '/User
 source $HOME/.bash_env_vars
 
 # Fig post block. Keep at the bottom of this file.
-eval "$(fig init bash post)"
 
+[[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.post.bash"
