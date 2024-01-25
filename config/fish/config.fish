@@ -40,3 +40,6 @@ set -x GPG_TTY (tty)
 navi widget fish | source
 set -g fish_user_paths "/usr/local/opt/openssl@1.1/bin" $fish_user_paths
 
+
+
+[ -f ~/.inshellisense/key-bindings.fish ] && source ~/.inshellisense/key-bindings.fish
