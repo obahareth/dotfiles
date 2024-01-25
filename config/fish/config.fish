@@ -19,6 +19,7 @@ source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # aliases
 alias ls="exa --icons"
+alias cat="bat"
 alias dc="docker-compose"
 alias dce="docker-compose exec"
 alias flushdns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
