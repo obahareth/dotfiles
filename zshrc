@@ -1,6 +1,7 @@
 # Fig pre block. Keep at the top of this file.
 export PATH="${PATH}:${HOME}/.local/bin"
 eval "$(fig init zsh pre)"
+export PATH=/usr/local/bin:$PATH
 
 # Load Prezto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"

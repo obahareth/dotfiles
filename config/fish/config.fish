@@ -18,7 +18,7 @@ starship init fish | source
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # aliases
-alias ls="exa --icons"
+alias ls="eza --icons"
 alias cat="bat"
 alias dc="docker-compose"
 alias dce="docker-compose exec"
