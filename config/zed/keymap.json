@@ -1,0 +1,17 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-l": "workspace::ToggleLeftDock",
+      "cmd-b": "project_panel::Toggle",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-l": "workspace::ToggleLeftDock",
+      "cmd-b": "project_panel::Toggle",
+      "cmd-shift-k": "editor::DeleteLine",
+    },
+  },
+]

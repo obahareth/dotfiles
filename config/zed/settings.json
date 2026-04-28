@@ -1,0 +1,90 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "agent": {
+    "dock": "left",
+    "play_sound_when_agent_done": "always",
+    "model_parameters": [],
+  },
+  "autosave": "on_focus_change",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
+  "base_keymap": "Cursor",
+  "ui_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte - No Italics",
+    "dark": "Catppuccin Mocha - No Italics",
+  },
+  "buffer_font_size": 16,
+  "features": {},
+  "buffer_font_family": "PragmataPro Mono Liga",
+  "ui_font_family": "PragmataPro Mono Liga",
+  "buffer_font_features": {
+    "calt": true,
+  },
+  "terminal": {
+    "shell": {
+      "program": "/opt/homebrew/bin/fish",
+    },
+    "font_family": "PragmataProMonoLiga Nerd Font",
+    "font_features": {},
+  },
+  "project_panel": {
+    "dock": "right",
+  },
+  "file_types": {
+    "Dockerfile": ["Dockerfile", "Dockerfile*"],
+  },
+  "languages": {
+    "Ruby": {
+      "indent_guides": {
+        "coloring": "fixed",
+        "background_coloring": "disabled",
+      },
+      "tab_size": 2,
+      "language_servers": ["ruby-lsp"],
+    },
+  },
+  "lsp": {
+    "ruby-lsp": {
+      "settings": {
+        "use_bundler": false,
+      },
+      "binary": {
+        "path": "/Users/obahareth/.asdf/shims/bundle",
+        "arguments": ["exec", "ruby-lsp"],
+        "env": {
+          "BUNDLE_GEMFILE": "/Users/obahareth/ruby-lsp/Gemfile",
+        },
+      },
+      "initialization_options": {
+        "formatter": "standard",
+        "linters": ["standard"],
+      },
+    },
+  },
+}

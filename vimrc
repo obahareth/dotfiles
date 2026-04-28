@@ -12,8 +12,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 Plug 'nordtheme/vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Initialize plugin system
 call plug#end()
 
-colorscheme nord
+colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha

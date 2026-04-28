@@ -25,7 +25,7 @@ alias dce="docker-compose exec"
 alias flushdns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
 alias gpg_test="echo \"test\" | gpg --clearsign"
 
-set -x GPG_TTY (tty)
+set -gx GPG_TTY (tty)
 
 
 # Gcloud
@@ -37,10 +37,16 @@ set -x GPG_TTY (tty)
 # bass source '/Users/obahareth/google-cloud-sdk/completion.bash.inc'
 
 
-# Navi
-navi widget fish | source
 set -g fish_user_paths "/usr/local/opt/openssl@1.1/bin" $fish_user_paths
 
 
 
 [ -f ~/.inshellisense/key-bindings.fish ] && source ~/.inshellisense/key-bindings.fish
+fish_add_path $HOME/.local/bin
+
+# opencode
+fish_add_path /Users/obahareth/.opencode/bin
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

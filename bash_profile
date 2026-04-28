@@ -1,7 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init bash pre)"
-
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
@@ -16,5 +12,3 @@ if [ -f '/Users/obahareth/google-cloud-sdk/completion.bash.inc' ]; then . '/User
 source $HOME/.bash_env_vars
 
 # Fig post block. Keep at the bottom of this file.
-
-[[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.post.bash"

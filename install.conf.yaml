@@ -16,6 +16,12 @@
     ~/.config/fish: config/fish
     ~/.config/fisher: config/fisher
     ~/.dir_colors: dir_colors
+    ~/.config/zed/settings.json:
+      path: config/zed/settings.json
+      force: true
+    ~/.config/zed/keymap.json:
+      path: config/zed/keymap.json
+      force: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

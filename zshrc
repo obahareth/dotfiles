@@ -1,6 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init zsh pre)"
 export PATH=/usr/local/bin:$PATH
 
 # Load Prezto
@@ -44,7 +41,16 @@ alias kraken="open -a 'GitKraken' --args -p $(pwd)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
+
+# Added by Windsurf
+export PATH="/Users/obahareth/.codeium/windsurf/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/obahareth/.codeium/windsurf/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/obahareth/.antigravity/antigravity/bin:$PATH"
+
+# Created by `pipx` on 2026-02-06 14:53:40
+export PATH="$PATH:/Users/obahareth/.local/bin"
