@@ -1,0 +1,28 @@
+# Ghostty config, shared by macOS and Linux. See README.md.
+# Options: https://ghostty.org/docs/config (or `ghostty +show-config --default --docs`)
+
+font-family = PragmataProMonoLiga Nerd Font
+font-size = 13
+
+# Catppuccin (themes/), following the system light/dark appearance
+theme = light:catppuccin-latte.conf,dark:catppuccin-mocha.conf
+
+window-padding-x = 8
+window-padding-y = 6
+window-padding-balance = true
+scrollback-limit = 1073741824
+
+clipboard-paste-protection = false
+clipboard-paste-bracketed-safe = true
+keybind = performable:super+shift+c=copy_to_clipboard:plain
+
+shell-integration = fish
+
+# Reopen windows, tabs, splits and their directories on launch (macOS only)
+window-save-state = always
+
+# Machine-specific settings, outside this repo (optional). Loaded last, so it
+# can override anything above. Put the shell path here, e.g.
+#   command = /opt/homebrew/bin/fish   (macOS, Homebrew)
+#   command = /usr/bin/fish            (Linux)
+config-file = ?~/.config/ghostty-local/config

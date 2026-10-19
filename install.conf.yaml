@@ -16,6 +16,7 @@
     ~/.config/fish: config/fish
     ~/.config/fisher: config/fisher
     ~/.dir_colors: dir_colors
+    ~/.config/ghostty: config/ghostty
     ~/.config/zed/settings.json:
       path: config/zed/settings.json
       force: true
