@@ -1,7 +1,7 @@
 # Ghostty config, shared by macOS and Linux. See README.md.
 # Options: https://ghostty.org/docs/config (or `ghostty +show-config --default --docs`)
 
-font-family = PragmataProMonoLiga Nerd Font
+font-family = 0xProto Nerd Font
 font-size = 13
 
 # Catppuccin (themes/), following the system light/dark appearance

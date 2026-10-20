@@ -41,8 +41,8 @@
   },
   "buffer_font_size": 16,
   "features": {},
-  "buffer_font_family": "PragmataPro Mono Liga",
-  "ui_font_family": "PragmataPro Mono Liga",
+  "buffer_font_family": "0xProto Nerd Font",
+  "ui_font_family": "0xProto Nerd Font",
   "buffer_font_features": {
     "calt": true,
   },
@@ -50,7 +50,7 @@
     "shell": {
       "program": "/opt/homebrew/bin/fish",
     },
-    "font_family": "PragmataProMonoLiga Nerd Font",
+    "font_family": "0xProto Nerd Font",
     "font_features": {},
   },
   "project_panel": {
