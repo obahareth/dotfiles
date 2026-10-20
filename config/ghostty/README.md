@@ -1,8 +1,8 @@
 # Ghostty
 
 Shared [Ghostty](https://ghostty.org) config for macOS and Linux, linked to
-`~/.config/ghostty` by `install.conf.yaml`. Needs 0xProto Nerd Font
-and fish.
+`~/.config/ghostty` by `install.conf.yaml`. Needs 0xProto Nerd Font,
+PragmataPro Mono Liga (Arabic fallback) and fish.
 
 ## Per-machine settings (not in this repo)
 

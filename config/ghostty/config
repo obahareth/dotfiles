@@ -2,6 +2,8 @@
 # Options: https://ghostty.org/docs/config (or `ghostty +show-config --default --docs`)
 
 font-family = 0xProto Nerd Font
+# Fallback for Arabic, which 0xProto doesn't cover
+font-family = PragmataPro Mono Liga
 font-size = 13
 
 # Catppuccin (themes/), following the system light/dark appearance
